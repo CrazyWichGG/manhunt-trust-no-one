@@ -1,0 +1,2 @@
+execute as @s[scores={tno.role=1}] on attacker as @s[scores={tno.role=1}] run kill @a[scores={tno.role=1}]
+execute as @s[scores={tno.role=2}] on attacker as @s[scores={tno.role=2}] run kill @a[scores={tno.role=2}]
