@@ -14,6 +14,10 @@ scoreboard players reset @a tno.death
 scoreboard objectives add tno.end_load_time dummy
 scoreboard players set $temp tno.end_load_time 0
 
+## config
+scoreboard objectives add tno.config dummy
+scoreboard players set spread_players tno.config 0
+
 # bossbars
 bossbar add tno:role.runner ""
 bossbar set tno:role.runner name [{"text":"You are a ","color":"white"},{"text":"Runner","color":"green","bold":true}]

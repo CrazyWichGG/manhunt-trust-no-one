@@ -1,5 +1,8 @@
-# random location
-spreadplayers ~ ~ 50 100 false @a
+# config
+## spread players
+execute if score spread_players tno.config matches 1 run spreadplayers ~ ~ 50 100 false @a
+
+# gamemode
 gamemode survival @a
 
 # runner role assignment
