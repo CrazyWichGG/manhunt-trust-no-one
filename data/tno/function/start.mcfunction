@@ -6,7 +6,7 @@ gamemode survival @a
 execute as @r run scoreboard players set @s tno.role 1
 
 # other roles full random
-execute as @a[scores={tno.role=0}] store result score $temp tno.role run random value 1..2
+execute as @a[scores={tno.role=0}] store result score @s tno.role run random value 1..2
 
 # set game state to pre-started
 scoreboard players set $temp tno.state 1
