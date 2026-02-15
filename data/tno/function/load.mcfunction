@@ -14,10 +14,20 @@ scoreboard players reset @a tno.death
 scoreboard objectives add tno.end_load_time dummy
 scoreboard players set $temp tno.end_load_time 0
 
+# teams
+team add role.runner
+team modify role.runner color green
+
+team add role.hunter
+team modify role.hunter color red
+
 ## config
 scoreboard objectives add tno.config dummy
-scoreboard players set spread_players tno.config 0
-
+execute unless score show_team tno.config = show_team tno.config run scoreboard players set show_team tno.config 1
+execute unless score spread_players tno.config = spread_players tno.config run scoreboard players set spread_players tno.config 0
+execute unless score interval_random_role tno.config = interval_random_role tno.config run scoreboard players set interval_random_role tno.config 0
+execute unless score respawn_hunter tno.config = respawn_hunter tno.config run scoreboard players set respawn_hunter tno.config 1
+execute unless score respawn_runner tno.config = respawn_runner tno.config run scoreboard players set respawn_runner tno.config 0
 # bossbars
 bossbar add tno:role.runner ""
 bossbar set tno:role.runner name [{"text":"You are a ","color":"white"},{"text":"Runner","color":"green","bold":true}]
