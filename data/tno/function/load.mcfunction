@@ -23,7 +23,7 @@ team modify role.hunter color red
 
 ## config
 scoreboard objectives add tno.config dummy
-execute unless score show_team tno.config = show_team tno.config run scoreboard players set show_team tno.config 1
+execute unless score show_team tno.config = show_team tno.config run scoreboard players set show_team tno.config 0
 execute unless score spread_players tno.config = spread_players tno.config run scoreboard players set spread_players tno.config 0
 execute unless score interval_random_role tno.config = interval_random_role tno.config run scoreboard players set interval_random_role tno.config 0
 execute unless score respawn_hunter tno.config = respawn_hunter tno.config run scoreboard players set respawn_hunter tno.config 1
