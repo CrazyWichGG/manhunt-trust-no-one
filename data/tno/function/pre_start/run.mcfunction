@@ -32,6 +32,7 @@ execute if score $temp tno.pre_start_timer matches 50 as @a[scores={tno.role=2}]
 
 execute if score $temp tno.pre_start_timer matches 55 run title @a[scores={tno.role=2}] subtitle [{"text":"Eliminate all the runner to win!","color":"white"}]
 execute if score $temp tno.pre_start_timer matches 55 run title @a[scores={tno.role=2}] title [{"text":"ROLE: "},{"text":"HUNTER","color":"red","bold":true}]
+execute if score $temp tno.pre_start_timer matches 55 as @a[scores={tno.role=2}] at @s run playsound block.end_portal.spawn master @s ~ ~ ~ 1 1 1
 
 # countdown numbers
 execute if score $temp tno.pre_start_timer matches 160 run title @a subtitle ""
@@ -41,15 +42,6 @@ execute if score $temp tno.pre_start_timer matches 200 run title @a title {"text
 execute if score $temp tno.pre_start_timer matches 220 run title @a title {"text":"GO!","color":"green","bold":true}
 
 # play sounds
-execute if score $temp tno.pre_start_timer matches 30 as @a at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 1 1 1
-execute if score $temp tno.pre_start_timer matches 35 as @a at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 1 1 1
-execute if score $temp tno.pre_start_timer matches 40 as @a at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 1 1 1
-execute if score $temp tno.pre_start_timer matches 45 as @a at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 1 1 1
-execute if score $temp tno.pre_start_timer matches 50 as @a at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 1 1 1
-
-execute if score $temp tno.pre_start_timer matches 55 as @a at @s run playsound block.end_portal.spawn master @s ~ ~ ~ 1 1 1
-
-execute if score $temp tno.pre_start_timer matches 140 as @a at @s run playsound minecraft:block.note_block.bit master @s ~ ~ ~ 1 1 1
 execute if score $temp tno.pre_start_timer matches 160 as @a at @s run playsound minecraft:block.note_block.bit master @s ~ ~ ~ 1 1 1
 execute if score $temp tno.pre_start_timer matches 180 as @a at @s run playsound minecraft:block.note_block.bit master @s ~ ~ ~ 1 1 1
 execute if score $temp tno.pre_start_timer matches 200 as @a at @s run playsound minecraft:block.note_block.bit master @s ~ ~ ~ 1 1 1

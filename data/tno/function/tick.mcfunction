@@ -1,6 +1,7 @@
 # config
 ## show team
 execute if score show_team tno.config matches 1 run function tno:config/show_team
+execute if score show_team tno.config matches 0 run function tno:config/hide_team
 ## interval random role
 execute if score $temp tno.state matches 2 if score interval_random_role tno.config matches 1.. run function tno:config/interval_random_role/run
 
