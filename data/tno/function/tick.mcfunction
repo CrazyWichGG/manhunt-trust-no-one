@@ -1,4 +1,7 @@
 # config
+## show scoreboard
+execute if score $temp tno.state matches 0 run scoreboard objectives setdisplay sidebar tno.config
+execute unless score $temp tno.state matches 0 run scoreboard objectives setdisplay sidebar
 ## show team
 execute if score show_team tno.config matches 1 run function tno:config/show_team
 execute if score show_team tno.config matches 0 run function tno:config/hide_team
