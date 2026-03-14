@@ -8,6 +8,9 @@ gamemode survival @a
 # runner role assignment
 execute as @r run scoreboard players set @s tno.role 1
 
+# arsonist role assignment (random chance)
+execute if score role_arsonist tno.config matches 1 if predicate tno:chance_arsonist run scoreboard players set @r[scores={tno.role=0}] tno.role 3
+
 # other roles full random
 execute as @a[scores={tno.role=0}] store result score @s tno.role run random value 1..2
 

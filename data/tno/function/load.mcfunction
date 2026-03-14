@@ -28,6 +28,11 @@ execute unless score spread_players tno.config = spread_players tno.config run s
 execute unless score interval_random_role tno.config = interval_random_role tno.config run scoreboard players set interval_random_role tno.config 0
 execute unless score respawn_hunter tno.config = respawn_hunter tno.config run scoreboard players set respawn_hunter tno.config 1
 execute unless score respawn_runner tno.config = respawn_runner tno.config run scoreboard players set respawn_runner tno.config 0
+execute unless score respawn_arsonist tno.config = respawn_arsonist tno.config run scoreboard players set respawn_arsonist tno.config 0
+execute unless score role_arsonist tno.config = role_arsonist tno.config run scoreboard players set role_arsonist tno.config 0
+execute unless score arsonist_cooldown tno.config = arsonist_cooldown tno.config run scoreboard players set arsonist_cooldown tno.config 36000
+
+
 # bossbars
 bossbar add tno:role.runner ""
 bossbar set tno:role.runner name [{"text":"You are a ","color":"white"},{"text":"Runner","color":"green","bold":true}]
@@ -44,6 +49,15 @@ bossbar set tno:role.hunter value 1
 bossbar set tno:role.hunter color red
 bossbar set tno:role.hunter style notched_12
 bossbar set tno:role.hunter visible true
+
+bossbar add tno:role.arsonist ""
+bossbar set tno:role.arsonist name [{"text":"You are a ","color":"white"},{"text":"Arsonist","color":"gold","bold":true}]
+bossbar set tno:role.arsonist max 1
+bossbar set tno:role.arsonist value 1
+bossbar set tno:role.arsonist color yellow
+bossbar set tno:role.arsonist style notched_12
+bossbar set tno:role.arsonist visible true
+
 
 # gamerules
 execute in minecraft:overworld run gamerule show_advancement_messages false

@@ -17,12 +17,16 @@ execute as @a unless score @s tno.role = @s tno.role run scoreboard players set 
 # set bossbar for each role
 execute if score $temp tno.state matches 2 run bossbar set tno:role.runner visible true
 execute if score $temp tno.state matches 2 run bossbar set tno:role.hunter visible true
+execute if score $temp tno.state matches 2 run bossbar set tno:role.arsonist visible true
 
 execute unless score $temp tno.state matches 2 run bossbar set tno:role.runner visible false
 execute unless score $temp tno.state matches 2 run bossbar set tno:role.hunter visible false
+execute unless score $temp tno.state matches 2 run bossbar set tno:role.arsonist visible false
 
 bossbar set tno:role.runner players @a[scores={tno.role=1}]
 bossbar set tno:role.hunter players @a[scores={tno.role=2}]
+bossbar set tno:role.arsonist players @a[scores={tno.role=3}]
+
 
 # player death
 execute if score $temp tno.state matches 2 as @a[scores={tno.death=1..}] run function tno:ingame/player_death
@@ -34,3 +38,7 @@ execute if score $temp tno.state matches 1 run function tno:pre_start/run
 
 # decide winner
 execute if score $temp tno.state matches 2 run function tno:ingame/decide_winner
+
+# role specific functions
+execute if score $temp tno.state matches 2 as @a[scores={tno.role=3}] run function tno:role/arsonist/run
+
