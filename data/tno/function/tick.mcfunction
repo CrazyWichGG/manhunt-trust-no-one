@@ -31,6 +31,11 @@ execute if score $temp tno.state matches 2 as @a[scores={tno.death=1..}] run fun
 # play animation
 execute if score $temp tno.state matches 1 run function tno:pre_start/run
 
-
 # decide winner
 execute if score $temp tno.state matches 2 run function tno:ingame/decide_winner
+
+# clock
+function tno:config/clock
+
+# compass
+function tno:config/compass

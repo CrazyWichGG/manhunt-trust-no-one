@@ -1,0 +1,2 @@
+execute as @a at @s if items entity @s weapon.* *[custom_data~{compass_target:"fortress"}] run title @s actionbar [{"text":"Fortress is ","color":"white"},{score:{name:"@s",objective:tno.compass.fortress},color:"gold"},{text:" blocks away","color":"white"}]
+execute as @a at @s if items entity @s weapon.* *[custom_data~{compass_target:"bastion"}] run title @s actionbar [{"text":"Bastion is ","color":"white"},{score:{name:"@s",objective:tno.compass.bastion},color:"gold"},{text:" blocks away","color":"white"}]

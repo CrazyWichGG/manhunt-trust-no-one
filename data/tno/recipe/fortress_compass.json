@@ -1,0 +1,23 @@
+{
+    "type": "crafting_shaped",
+    "category": "redstone",
+    "pattern": [
+        " G ",
+        "GCG",
+        " G "
+    ],
+    "key": {
+        "G": "netherrack",
+        "C": "compass"
+    },
+    "result": {
+        "id": "compass",
+        "components": {
+            "item_name": "Fortress Compass",
+            "custom_data": {
+                "compass_target": "fortress"
+            },
+            "enchantment_glint_override": true
+        }
+    }
+}

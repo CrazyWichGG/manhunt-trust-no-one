@@ -14,6 +14,9 @@ scoreboard players reset @a tno.death
 scoreboard objectives add tno.end_load_time dummy
 scoreboard players set $temp tno.end_load_time 0
 
+scoreboard objectives add tno.clock dummy
+scoreboard players set $tick tno.clock 0
+
 # teams
 team add role.runner
 team modify role.runner color green
@@ -28,6 +31,14 @@ execute unless score spread_players tno.config = spread_players tno.config run s
 execute unless score interval_random_role tno.config = interval_random_role tno.config run scoreboard players set interval_random_role tno.config 0
 execute unless score respawn_hunter tno.config = respawn_hunter tno.config run scoreboard players set respawn_hunter tno.config 1
 execute unless score respawn_runner tno.config = respawn_runner tno.config run scoreboard players set respawn_runner tno.config 0
+execute unless score respawn_arsonist tno.config = respawn_arsonist tno.config run scoreboard players set respawn_arsonist tno.config 0
+execute unless score role_arsonist tno.config = role_arsonist tno.config run scoreboard players set role_arsonist tno.config 0
+execute unless score arsonist_cooldown tno.config = arsonist_cooldown tno.config run scoreboard players set arsonist_cooldown tno.config 36000
+## compass
+scoreboard objectives add tno.compass.fortress dummy
+scoreboard objectives add tno.compass.bastion dummy
+
+
 # bossbars
 bossbar add tno:role.runner ""
 bossbar set tno:role.runner name [{"text":"You are a ","color":"white"},{"text":"Runner","color":"green","bold":true}]
