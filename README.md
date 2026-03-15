@@ -1,7 +1,7 @@
 # Manhunt: Trust No One
 Minecraft Manhunt is a popular game mode where runners try to complete the game while being hunted by the hunters.
 
-This data pack introduces a new twist by randomizing the roles of each player, making it more challenging and unpredictable. Each player only knows their own role and killing the same team results in the death of the whole team.
+This data pack introduces a new twist by randomizing the roles of each player, making it more challenging and unpredictable. Each player only knows their own role and killing the same team causes you death!
 
 _For more information please navigate to [Modrinth](https://modrinth.com/datapack/manhunt-trust-no-one)_ (Soon)
 
