@@ -3,10 +3,10 @@ Minecraft Manhunt is a popular game mode where runners try to complete the game 
 
 This data pack introduces a new twist by randomizing the roles of each player, making it more challenging and unpredictable. Each player only knows their own role and killing the same team causes you death!
 
-_For more information please navigate to [Modrinth](https://modrinth.com/datapack/manhunt-trust-no-one)_ (Soon)
+_For more information please navigate to [Modrinth](https://modrinth.com/datapack/manhunt-trust-no-one)_
 
 ## 📥 How to download?
-You can download the data pack via Modrinth to support me! [Download](https://modrinth.com/datapack/manhunt-trust-no-one) (Soon)
+You can download the data pack via Modrinth to support me! [Download](https://modrinth.com/datapack/manhunt-trust-no-one)
 
 Or you can download it directly from the GitHub repository as well.
 
