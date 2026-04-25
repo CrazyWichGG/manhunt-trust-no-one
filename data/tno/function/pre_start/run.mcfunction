@@ -10,6 +10,7 @@ execute if score $temp tno.pre_start_timer matches 35 as @a[scores={tno.role=1}]
 execute if score $temp tno.pre_start_timer matches 40 run title @a[scores={tno.role=1}] title [{"text":"ROLE: "},{"text":"RUN","color":"green","bold":true},{"text":"NER","color":"white","obfuscated":true,"bold":true}]
 execute if score $temp tno.pre_start_timer matches 40 as @a[scores={tno.role=1}] at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 1 1 1
 execute if score $temp tno.pre_start_timer matches 45 run title @a[scores={tno.role=1}] title [{"text":"ROLE: "},{"text":"RUNN","color":"green","bold":true},{"text":"ER","color":"white","obfuscated":true,"bold":true}]
+execute if score $temp tno.pre_start_timer matches 45 as @a[scores={tno.role=1}] at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 1 1 1
 execute if score $temp tno.pre_start_timer matches 50 run title @a[scores={tno.role=1}] title [{"text":"ROLE: "},{"text":"RUNNE","color":"green","bold":true},{"text":"R","color":"white","obfuscated":true,"bold":true}]
 execute if score $temp tno.pre_start_timer matches 50 as @a[scores={tno.role=1}] at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 1 1 1
 
@@ -27,6 +28,7 @@ execute if score $temp tno.pre_start_timer matches 35 as @a[scores={tno.role=2}]
 execute if score $temp tno.pre_start_timer matches 40 run title @a[scores={tno.role=2}] title [{"text":"ROLE: "},{"text":"HUN","color":"red","bold":true},{"text":"TER","color":"white","obfuscated":true,"bold":true}]
 execute if score $temp tno.pre_start_timer matches 40 as @a[scores={tno.role=2}] at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 1 1 1
 execute if score $temp tno.pre_start_timer matches 45 run title @a[scores={tno.role=2}] title [{"text":"ROLE: "},{"text":"HUNT","color":"red","bold":true},{"text":"ER","color":"white","obfuscated":true,"bold":true}]
+execute if score $temp tno.pre_start_timer matches 45 as @a[scores={tno.role=2}] at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 1 1 1
 execute if score $temp tno.pre_start_timer matches 50 run title @a[scores={tno.role=2}] title [{"text":"ROLE: "},{"text":"HUNTE","color":"red","bold":true},{"text":"R","color":"white","obfuscated":true,"bold":true}]
 execute if score $temp tno.pre_start_timer matches 50 as @a[scores={tno.role=2}] at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 1 1 1
 
