@@ -17,9 +17,11 @@ scoreboard players set $temp tno.end_load_time 0
 # teams
 team add role.runner
 team modify role.runner color green
+team modify role.runner displayName {text:"Runner",color:"green"}
 
 team add role.hunter
 team modify role.hunter color red
+team modify role.hunter displayName {text:"Hunter",color:"red"}
 
 ## config
 scoreboard objectives add tno.config dummy
