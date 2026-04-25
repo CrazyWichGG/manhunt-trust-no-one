@@ -51,7 +51,7 @@ bossbar set tno:role.hunter style notched_12
 bossbar set tno:role.hunter visible true
 
 bossbar add tno:role.arsonist ""
-bossbar set tno:role.arsonist name [{"text":"You are a ","color":"white"},{"text":"Arsonist","color":"gold","bold":true}]
+bossbar set tno:role.arsonist name [{"text":"You are an ","color":"white"},{"text":"Arsonist","color":"gold","bold":true}]
 bossbar set tno:role.arsonist max 1
 bossbar set tno:role.arsonist value 1
 bossbar set tno:role.arsonist color yellow
