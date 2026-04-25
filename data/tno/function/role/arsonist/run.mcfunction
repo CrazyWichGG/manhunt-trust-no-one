@@ -32,4 +32,4 @@ execute if score $cooldown tno.role.arsonist matches 0 unless entity @a[scores={
 execute if score $cooldown tno.role.arsonist matches 1.. run scoreboard players remove $cooldown tno.role.arsonist 1
 
 # particle on doused players
-execute as @a[scores={tno.role=1..2},tag=!tno.arsonist.doused,gamemode=!spectator] at @s run particle minecraft:dust{color:[1.0,0.5,0.0],scale:1.0} ~ ~.5 ~ .3 .5 .3 1 5 force @a[scores={tno.role=3}]
+execute as @a[scores={tno.role=1..2},tag=tno.arsonist.doused,gamemode=!spectator] at @s run particle minecraft:dust{color:[1.0,0.5,0.0],scale:1.0} ~ ~.5 ~ .3 .5 .3 1 5 force @a[scores={tno.role=3}]
